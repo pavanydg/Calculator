@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;    
+}
+
+.flex-container{
+    background-color: black;
+    width: 300px;
+    height: 425px;
+    display: grid;    
+    grid-template-areas: 
+    "ans-box ans-box ans-box ans-box"
+    "clear clear back divide"
+    "seven eight nine multi"
+    "four five six subt"
+    "one two three addi"
+    "zer zer zer equal";
+    justify-content: start;
+}
+
+button{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(234, 228, 44);
+    font-size: 30px;
+    border-radius: 10px;
+}
+.screen{
+    grid-area: ans-box;
+    background-color: black;
+    height: 50px;
+    width: 300px;
+    color: wheat;    
+    font-size: 50px;
+    text-align: right;
+}
+.clear{
+    grid-area: clear;
+    width: 150px;
+}
+.back{
+    grid-area: back;
+}
+.divide{
+    grid-area: divide;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine
+}
+.multiply{
+    grid-area: multi;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.sub{
+    grid-area: subt;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.add{
+    grid-area: addi;
+}
+.zero{
+    grid-area: zer;
+    width: 225px
+}
+.equal{
+    grid-area: equal;
+}
+.operator{
+    background-color: orange;
+}
+button:hover{
+    opacity: 0.5;
+}
